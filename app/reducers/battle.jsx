@@ -1,23 +1,23 @@
 import {ADD_TODO, TOGGLE_TODO} from '../actions/battle.jsx'
 
-const todos = (state = [], action) => {
+
+const initialState = {
+  name: 'naa peru siva'
+};
+
+
+const todos = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ]
-    case TOGGLE_TODO:
-      return state.map(todo =>{
-        (todo.id === action.id)
-          ?[...todo,
-            {completed: !todo.completed}
-          ]:todo
-      })
+    console.log(state)
+    console.log("above is state; below action")
+    console.log(action)
+      return {
+        name: state.name,
+        id: action.id,
+        text: action.text,
+        completed: false,
+      };
     default:
       return state
   }

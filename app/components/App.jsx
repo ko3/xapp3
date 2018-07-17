@@ -9,7 +9,7 @@ import Battle from './Battle.jsx'
 import Popular from './Popular.jsx'
 import Results from './Results.jsx'
 import Redirect from './Redirect.jsx'
-import ko3 from './ko3.jsx'
+import Ko3 from './Ko3.jsx'
 
 
 class App extends React.Component {
@@ -24,7 +24,7 @@ class App extends React.Component {
             <Route path='/battle/results' component={Results} />
             <Route path='/popular' component={Popular} />
             <Route path='/redirect' component={Redirect} />
-            <Route path='/ko3' component={ko3} />
+            <Route path='/ko3' component={Ko3} />
             <Route render={function(){
                 return <p>Not Found</p>
             }} />
