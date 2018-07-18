@@ -13,7 +13,7 @@ const todos = (state = initialState, action) => {
     console.log("above is state; below action")
     console.log(action)
       return {
-        name: state.name,
+        ...state,
         id: action.id,
         text: action.text,
         completed: false,
