@@ -20,6 +20,10 @@ module.exports = {
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],
+    modules: [path.join(__dirname, 'app'), 'node_modules']
+  },
   devServer:{
     inline : true,
     port : 8080,
