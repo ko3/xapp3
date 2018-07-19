@@ -21,11 +21,13 @@ class Ko3 extends React.Component {
       <div className= 'home-container'>
         <h1>React Router Tutorial</h1>
         <h2>
+          <div>This is all state data</div>
           <div>{this.state.name}</div>
           <div>{this.state.description}</div>
           <div>{this.state.message}</div>
         </h2>
         <h4>
+          <div>This is all props data</div>
           <div>{this.props.active}</div>
           <div>text:{this.props.text}</div>
           <div>id:{this.props.id}</div>
