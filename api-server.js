@@ -16,20 +16,27 @@ let port = 3001; //process.env.PORT || 8080;        // set our port
 let router = express.Router();              // get an instance of the express Router
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
+router.get('/', (req, res) => {
+    res.json({ message: 'hooray! welcome to our api!' });
 });
 //add path '/*' to allow all the variables
-router.get('/hello', (req,res) => {
+router.get('/hello1', (req,res) => {
     setTimeout(() => {
-      res.setHeader('Content-Type':'application/json');
+      res.setHeader('Content-Type','application/json');
       res.status(200).send(mockData1);
+    }, 500);
+});
+
+router.get('/hello2', (req,res) => {
+    setTimeout(() => {
+      res.setHeader('Content-Type','application/json');
+      res.status(200).send(mockData2);
     }, 500);
 });
 
 router.post('/helloPost', (req,res) => {
     setTimeout(() => {
-      res.setHeader('Content-Type':'application/json');
+      res.setHeader('Content-Type','application/json');
       res.status(200).send(transactions[req.params.transaction]);
     }, 500);
 });
@@ -43,13 +50,4 @@ app.use('/api', router);
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('Magic happens on port ' + port);
-
-//https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
-//add "scripts": {
-//    	"start": "node api-server.js"
-//	}
-//"dependencies": {
-//        "express": "~4.0.0",
-//       "body-parser": "~1.0.1"
-//    },
+console.log('Magic happens on port ' + port)

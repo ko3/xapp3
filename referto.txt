@@ -2,4 +2,18 @@ Take a look at
 
 https://github.com/chentsulin/electron-react-boilerplate
 
-this is rathod.z
+//https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+//add "scripts": {
+//    	"start": "node api-server.js"
+//	}
+//"dependencies": {
+//        "express": "~4.0.0",
+//       "body-parser": "~1.0.1"
+//    },
+
+React test
+Chance - chance
+Sinon, spy - sinon
+mount, shallow - enzyme
+
+Code coverage - nyc Istanbul JS
