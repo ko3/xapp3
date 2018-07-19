@@ -1,16 +1,13 @@
-import React from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-//import Router from 'ReactRouter.BrowserRouter'
-//import Route from 'ReactRouter.Route'
-//import Switch from 'ReactRouter.Switch'
-import Nav from './Nav.jsx'
-import Home from './Home.jsx'
-import Battle from './Battle.jsx'
-import Popular from './Popular.jsx'
-import Results from './Results.jsx'
-import Redirect from './Redirect.jsx'
-import Ko3 from './Ko3.jsx'
-
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Nav from './Nav.jsx';
+import Home from './Home.jsx';
+import Battle from './Battle.jsx';
+import Popular from './Popular.jsx';
+import Results from './Results.jsx';
+import Redirect from './Redirect.jsx';
+import Ko3 from './Ko3.jsx';
+import News from './News.jsx';
 
 class App extends React.Component {
   render() {
@@ -25,6 +22,7 @@ class App extends React.Component {
             <Route path='/popular' component={Popular} />
             <Route path='/redirect' component={Redirect} />
             <Route path='/ko3' component={Ko3} />
+            <Route path='/News' component={News} />
             <Route render={function(){
                 return <p>Not Found</p>
             }} />

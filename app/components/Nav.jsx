@@ -19,6 +19,9 @@ function Nav () {
       <li>
         <NavLink activeClassName='active' to='/ko3'>ko3</NavLink>
       </li>
+      <li>
+        <NavLink activeClassName='active' to='/news'>News</NavLink>
+      </li>
     </ul>
   )
 }
