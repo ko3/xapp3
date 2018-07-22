@@ -17,61 +17,31 @@ class News extends React.Component {
   }
 
   componentDidMount(){
-    axios.get('http://localhost:3001/api/data/videos/news/live',
-      {
-        'headers':{"Access-Control-Allow-Origin": "*"}
-      })
-    //axios.get(encodeURI)
-      .then(res => {
-        this.setState({ videos:res.data.videos });
-      });
-      this.props.initial();
-      //let encodedURI = window.encodeURI('http://localhost:3001/api/data/videos/news/live');
-
+    this.props.initial();
   }
 
   render() {
     return (
       <div className='home-container'>
-        <h1>React</h1>
+        <h1>React from props</h1>
         <ul className='flex-list'>
-          {this.state.videos.map(function(video, index){
+          {this.props.videos.map(function(video, index){
             return(<li key={video.id} className='flex-item'>
               <VideoThumnail details={video}/>
             </li>)
           })}
         </ul>
-        <h2>
-          <div>{this.state.name}</div>
-          <div>{this.state.description}</div>
-          <div>{this.state.message}</div>
-        </h2>
-        <h4>
-          <div>{this.props.active}</div>
-          <div>text:{this.props.text}</div>
-          <div>id:{this.props.id}</div>
-          <div>status:{this.props.status}</div>
-        </h4>
       </div>
     );
   }
 };
 
 const mapStateToProps = (state) => ({
-  active: state.name,
-  text: state.text,
-  id: state.id,
-  status: state.completed
+  videos: state.news.videos
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  //initial: () => dispatch(fetchInitial(fetchNewsVideoList()))
-  initial: () => {
-    console.log("in news component initial")
-    dispatch(fetchNewsVideoList());
-    //dispatch({type:FETCH_INITIAL, data:{}});
-  }
-  //initial: () => dispatch(fetchInitial({data:'lgnsofiflbosboslfb'}))
+  initial: () => dispatch(fetchNewsVideoList())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(News);
