@@ -1,12 +1,21 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from'react';
+import ReactDOM from'react-dom';
 require('./index.css');
 import App from './components/App.jsx'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import todos from './reducers/battle.jsx'
+import { createStore, applyMiddleware} from 'redux'
+import rootReducer from './reducers/rootReducer.jsx'
+import thunkMiddleware from 'redux-thunk'
+import { createLogger } from 'redux-logger'
 
-const store = createStore(todos)
+const loggerMiddleware = createLogger()
+
+const store = createStore(rootReducer,
+                applyMiddleware(
+                  thunkMiddleware, // lets us dispatch() functions
+                  loggerMiddleware // neat middleware that logs actions
+                  )
+                )
 
 ReactDOM.render(
   <Provider store={store}>

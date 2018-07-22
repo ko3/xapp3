@@ -64,6 +64,17 @@ a{
   cursor: pointer;
 }
 
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  margin: 20px;
+  text-align: center;
+}
+
 .popular-list {
   display: flex;
   flex-wrap: wrap;

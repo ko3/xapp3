@@ -1,0 +1,72 @@
+{
+  "hello":"hello world!",
+  "videos":[
+            {
+              "id":1,
+              "videoName": "TV9",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":2,
+              "videoName": "NTV",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":3,
+              "videoName": "ETV Telanagana",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":4,
+              "videoName": "ETV AP",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":5,
+              "videoName": "ABN",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":6,
+              "videoName": "HMTV",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            }
+          ],
+    "messaege":"this a video list mock data"
+}
