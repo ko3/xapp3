@@ -1,4 +1,4 @@
-//import $ from 'jQuery';
+import $ from 'jquery';
 import axios from 'axios';
 
 export const fetchNewsVideoList1 = () => {
@@ -21,13 +21,26 @@ export const fetchInitial = (data)=>{
   data
 }
 
+// export const fetchNewsVideoList = () => {
+//   return dispatch => {
+//     return $.getJSON('http://localhost:3001/api/data/videos/news/live')
+//       .done(res =>{
+//         console.log(res)
+//           console.log("res.data")
+//           console.log(res.data)
+//         dispatch({type:FETCH_INITIAL, data:res.data})
+//       })
+//       .fail(error=>{
+//         console.log(error)
+//       });
+//   }
+// }
+
 export const fetchNewsVideoList = () => {
   return dispatch => {
-    return axios.get('http://localhost:3001/api/data/videos/news/live',
-      {
-        'headers':{"Access-Control-Allow-Origin": "*"}
-      })
+    return axios.get('http://localhost:3001/api/data/videos/news/live')
       .then(res => {
+        console.log(res)
         dispatch({type:FETCH_INITIAL, data:res.data});
       })
       .catch(error=>{
