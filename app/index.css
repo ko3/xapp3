@@ -109,6 +109,11 @@ a{
   transform: translateY(1px);
 }
 
+.thumbnail {
+  width: 150px;
+  border-style: hidden;
+}
+
 .avatar {
   width: 150px;
   border-radius: 50%;

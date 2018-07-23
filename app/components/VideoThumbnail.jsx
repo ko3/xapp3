@@ -9,7 +9,7 @@ class VideoThumbnail extends React.Component {
     return (<div>
               <div>{this.props.details.videoName}</div>
               <img
-                className='avatar'
+                className='thumbnail'
                 src={this.props.details.vidoeThumbnail.medium.url}
                 alt={'Avatar for '}
               />

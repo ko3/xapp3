@@ -3,10 +3,10 @@
   "videos":[
             {
               "id":1,
-              "videoName": "TV9",
+              "videoName": "TV9 Live News",
               "vidoeThumbnail":{
                 "medium": {
-                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                  "url": "https://i.ytimg.com/vi/HoWJeHL3AEk/mqdefault_live.jpg"
                 }
               },
               "videoLink":"",
@@ -14,10 +14,10 @@
             },
             {
               "id":2,
-              "videoName": "NTV",
+              "videoName": "NTV Live News",
               "vidoeThumbnail":{
                 "medium": {
-                  "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                  "url": "https://i.ytimg.com/vi/8EFSLb91mb8/mqdefault_live.jpg"
                 }
               },
               "videoLink":"",
@@ -47,7 +47,51 @@
             },
             {
               "id":5,
-              "videoName": "ABN",
+              "videoName": "ABN Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/WnLiFBiHy-4/mqdefault_live.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":6,
+              "videoName": "HMTV Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/U3x_DkL0SNY/mqdefault_live.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":7,
+              "videoName": "TV9 Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/HoWJeHL3AEk/mqdefault_live.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":8,
+              "videoName": "NTV Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/8EFSLb91mb8/mqdefault_live.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":9,
+              "videoName": "ETV Telanagana",
               "vidoeThumbnail":{
                 "medium": {
                   "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
@@ -57,11 +101,33 @@
               "stream": "live"
             },
             {
-              "id":6,
-              "videoName": "HMTV",
+              "id":10,
+              "videoName": "ETV AP",
               "vidoeThumbnail":{
                 "medium": {
                   "url": "https://yt3.ggpht.com/-jU7Ecfsf-DQ/AAAAAAAAAAI/AAAAAAAAAAA/VR5Ga8LBmKQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":11,
+              "videoName": "ABN Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/WnLiFBiHy-4/mqdefault_live.jpg"
+                }
+              },
+              "videoLink":"",
+              "stream": "live"
+            },
+            {
+              "id":12,
+              "videoName": "HMTV Live News",
+              "vidoeThumbnail":{
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/U3x_DkL0SNY/mqdefault_live.jpg"
                 }
               },
               "videoLink":"",
